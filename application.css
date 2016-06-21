@@ -1,0 +1,62 @@
+.title{
+  margin: auto;
+  font-family: sans-serif;
+  width: 25%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.board {
+  margin: auto;
+  background: #fff;
+  width: 640px;
+  height: 640px;
+  border: 5px solid black;
+}
+
+.tile {
+  width: 58px;
+  height: 58px;
+  background: #bbb;
+  float: left;
+  border: 3px outset #ddd;
+  border-right: 3px inset #333;
+  border-bottom: 3px inset #333;
+  font-size: 44px;
+  text-align: center;
+}
+
+.tile.explored {
+  border: 3px solid #999;
+}
+
+.tile.explored.bombed {
+  background: red;
+}
+
+.tile.flagged {
+  color: red;
+}
+
+.modal-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 50px;
+  margin-left: -250px;
+  transform: translateY(-50%);
+  background: white;
+  border-radius: 5px;
+}
